@@ -30,7 +30,7 @@ const options = {
 
 export function getMovies() {
   return fetch(
-    `${BASH_PATH}/movie/now_playing?language=en-US&page=1&region=kr`,
+    `${BASH_PATH}/movie/now_playing?language=en-US&page=1`,
     options
   ).then((response) => response.json());
 }
