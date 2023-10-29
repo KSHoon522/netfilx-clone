@@ -34,3 +34,10 @@ export function getMovies() {
     options
   ).then((response) => response.json());
 }
+
+export function searchMoives() {
+  return fetch(
+    `${BASH_PATH}/search/multi?query=fa&include_adult=false&language=en-US&page=1`,
+    options
+  ).then((response) => response.json());
+}
