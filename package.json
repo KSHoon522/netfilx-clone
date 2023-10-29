@@ -30,7 +30,9 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "deploy": "gh-pages -d build",
+    "predeploy": "npm run build"
   },
   "eslintConfig": {
     "extends": [
@@ -54,7 +56,9 @@
     "@types/react-beautiful-dnd": "^13.1.6",
     "@types/react-helmet": "^6.1.8",
     "@types/react-router-dom": "^5.3.3",
+    "gh-pages": "^6.0.0",
     "i": "^0.3.7",
     "npm": "^10.2.1"
-  }
+  },
+  "homepage": "https://KSHoon522.github.io/netflix-clone"
 }
